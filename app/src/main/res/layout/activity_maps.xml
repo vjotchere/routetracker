@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:weightSum="1"
+android:id="@+id/root">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/mapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lat_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/latitude" />
+
+        <TextView
+            android:id="@+id/long_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lat_string"
+            android:gravity="right"
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/longitude"
+            android:layout_toRightOf="@+id/lat_string"
+            android:text="@string/dummy" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/latitude"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/long_string"
+            android:text="@string/dummy" />
+
+        <Switch
+            android:id="@+id/browse_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/long_string"
+            android:onClick="onBrowse"
+            android:text="@string/browse_mode" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/long_string"
+            android:layout_toRightOf="@+id/browse_button"
+            android:onClick="onReset"
+            android:text="@string/reset_button" />
+
+    </RelativeLayout>
+</LinearLayout>
+

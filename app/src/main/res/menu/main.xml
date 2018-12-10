@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/cont" android:title="Continue"/>
+    <item android:id="@+id/end" android:title="Stop"/>
+    <!--<item android:id="@+id/background_enable" android:title="Enable Background"/>-->
+    <!--<item android:id="@+id/background_disable" android:title="Disable Background"/>-->
+    <item android:id="@+id/save" android:title="Save Route"/>
+    <!--<item android:id="@+id/load" android:title="Load Route"/>-->
+    <!--<item android:id="@+id/delete" android:title="Delete Route"/>-->
+    <!--<item android:id="@+id/color" android:title="Color"/>-->
+    <item android:id="@+id/help" android:title="Help"/>
+
+
+</menu>

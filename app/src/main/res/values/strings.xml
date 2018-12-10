@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Route Tracker</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="launchMap">Launch the Map</string>
+    <string name="dummy">Unknown</string>
+    <string name="latitude">Latitude: </string>
+    <string name="longitude">Longitude: </string>
+    <string name="reset_button">Reset</string>
+    <string name="browse_mode">Browse Mode </string>
+    <string name="start">Start</string>
+    <string name="help_text">The Disable/Enable Background menu option toggles if the app tracks
+        locations while the app is in the background. Save route stores the route locally. Color
+        allows the user to change the color of the circle. The browse mode switch is used to enable
+        and disable a camera snap when a new location point is plotted. The reset button, clears all
+        of the plotted points.</string>
+</resources>
+
